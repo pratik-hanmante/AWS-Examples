@@ -1,0 +1,14 @@
+//creating bucket
+//these scripting files and the data related to the buckets will be stored in the /temp
+
+aws s3api create-bucket --bucket $BUCKET_NAME //we can name the bucket after run
+
+//deleting bucket
+
+aws s3api delete-bucket --bucket $BUCKET_NAME //we can name bucket during the execution
+
+//listing objects
+
+aws s3api list-objects-v2 --bucket $BUCKET_NAME 
+
+/puting data into the file
